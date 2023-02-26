@@ -1,0 +1,114 @@
+# Hatolar bilan ishlash
+# Turlari
+
+# SyntaxError - SintaksisHatolik
+#    print "Hello World!"  
+
+# EOL va EOF xatolik:
+    
+# EOL (end of line - qator yakuni) (qator yakuniga " yoki ' qo'ymasak chiqadi)
+#    print("Hello World!)
+
+#EOF (end of function - funksiya yakunida qavs yopilmaganda chiqadi)
+#    print("Hello World!"
+
+# IndentationError - Joy tashlashda hatolik
+#    print("Hello World!")
+
+#print("O'ngacha sanaymiz")
+#for n in range(10):
+#print(n+1) # bu qator joy tashlab yozilishi kerak edi!    
+
+#son = 50
+#if son>=0:
+#    print("Musbat son")
+#else:
+#print("Manfiy son")    
+
+# Run Time Error - Dasturni Bajarishda Xatolik :
+    
+    #TypeError - biror funksiya yoki metodga noto'g'ri
+    #malumot turini yuborish
+#son = input("Istalgan son kiriting: ") # songa aylantirmadik
+#print(f"{son} ning kvadrati {son**2} ga teng")
+
+    #NameError - o'zgaruvchi, funksiya, obyekt nomini notog'ri
+    #yozish oqibatida kelib chiquvchi xatolik
+#prit("Hello World!")
+
+#mevalar = ['olma','uzum','nok','anor','anjir']
+#for meva in mvealar:
+#    print(meva)    
+
+    #ValueError - funksiyaga notog'ri qiymatni yuborish natijasidagi hatolik
+#son = int(input("Istalgan sonni kiriting: ")) # 5.5
+#if son >= 0:
+#    print("Musbat son")
+#else:
+#    print("Manfiy son")
+
+    #IndexError - ro'yxatdan element chaqirishda notog'ri indeks ishlatish
+#mevalar = ['olma','anor','uzum']
+#print(mevalar[3]) # error
+#print(mevalar[2])
+
+    #ZeroDivisionError - dastur jarayonida 0 ga bo'lish natijasida yuzaga keladigan xato     
+#x, y = 50, 50 
+#z = 250 / (x-y) # x-y=0
+ 
+    #Mantiqiy xatolar
+# sonlar bilan ishlashda:
+    
+#radius = 5
+#pi = 4.14 # xato # aslida, pi=3.14
+#aylana_yuzi = pi*radius**2
+#print(aylana_yuzi)
+
+# Qo'lda test qilish:
+#son = float(input("Istalgan son kiriting: ")) # 1)4 = 2, 2)9 = 4,5 
+#ildiz = son**1/2 # xato
+#print(f"{son} ning ildizi {ildiz} ga teng")    
+
+#son = float(input("Istalgan son kiriting: ")) # 1)4 = 2, 2)9 = 4,5 
+#ildiz = son**(1/2) # to'g'ri
+#print(f"{son} ning ildizi {ildiz} ga teng") 
+
+#Bazida noorin bo'sh joy qoldirish va qoldirmaslik ham xatoga sabab bo'ladi
+#mevalar = ['olma','uzum','nok','anor','anjir']
+#for meva in mevalar:
+#    print(meva)
+#    print("Dastur tugadi")
+
+# EXEPTIONS
+
+# try-except (agar try dasturda hato bo'lsa ikkinchi rejaga ko'ra ishlavuradi
+# yani exept digi rejaga binoan,  if else ga sal o'xshidi)
+
+
+#yosh = input("Yoshingizni kiriting: ")
+#yosh = int(yosh)
+#print(f"Siz {2022-yosh} yilda tug'ilgansiz")
+
+#yosh = input("Yoshingizni kiriting: ")
+#try:
+#    yosh = int(yosh) #xato qaytargan qator
+#    print(f"Siz {2022-yosh} yilda tug'ilgansiz")
+#except: # xato yuz berganda bajariluvchi kod
+#    print("Butun son kiritmadingiz")
+
+#print("Dastur tugadi!")    
+
+# Try-Except-Else
+
+yosh = input("Yoshingizni kiriting: ")
+try:
+    yosh = int(yosh) #xato qaytargan qator
+    
+except: # xato yuz berganda bajariluvchi kod
+    print("Butun son kiritmadingiz")
+
+else:
+    print(f"Siz {2022-yosh} yilda tug'ilgansiz")    
+
+print("Dastur tugadi!")
+
